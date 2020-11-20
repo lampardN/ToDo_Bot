@@ -3,7 +3,7 @@ import sqlite3
 
 class db_controller:
     def __init__(self):
-        self.db = sqlite3.connect('govno.db')
+        self.db = sqlite3.connect('database.db')
         self.cursor = self.db.cursor()
 
     def addNote(self, id, text, status):
